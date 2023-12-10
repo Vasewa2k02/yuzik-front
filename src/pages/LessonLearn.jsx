@@ -172,9 +172,13 @@ const LessonLearn = observer(() => {
     try {
       const _topics = await topicApi.getAllTopics();
       const _grammarProgress = await grammarProgressApi.getAllByUserId();
-      const _lessons = lessonTransform(_topics);
 
-      console.log(_grammarProgress);
+      const _grammarProgressIds = _grammarProgress.reduce(
+        (acc, item) => [...acc, ...item.taskIds],
+        []
+      );
+
+      const _lessons = lessonTransform(_topics, _grammarProgressIds);
 
       setComplitedTasks(_grammarProgress);
       setLessons(_lessons);
@@ -183,13 +187,41 @@ const LessonLearn = observer(() => {
     } catch (error) {}
   };
 
-  const lessonTransform = (_topics) => {
+  const lessonTransform = (_topics, _grammarProgressIds) => {
     const _lessons = [];
 
     _topics.forEach((topic) => {
       if (topic.lessons.length > 0) {
         topic.lessons.forEach((lesson) => {
-          _lessons.push({ ...lesson, topicName: topic.name });
+          const { tasks, ...rest } = JSON.parse(JSON.stringify(lesson));
+          const { tasks: tasks2, ...rest2 } = JSON.parse(
+            JSON.stringify(lesson)
+          );
+
+          rest.tasks = tasks.filter((task) =>
+            _grammarProgressIds.find((item) => task.id === item)
+          );
+
+          if (rest.tasks.length) {
+            rest.id = `${rest.id}_`;
+            rest.name = `Выполненные ${rest.name}`;
+
+            _lessons.push({
+              ...rest,
+              topicName: `${topic.name}`,
+            });
+          }
+
+          rest2.tasks = tasks2.filter(
+            (task) => !_grammarProgressIds.find((item) => task.id === item)
+          );
+
+          if (rest2.tasks.length) {
+            _lessons.push({
+              ...rest2,
+              topicName: topic.name,
+            });
+          }
         });
       } else {
         _lessons.push({ topicName: topic.name });
@@ -379,16 +411,6 @@ const LessonLearn = observer(() => {
             }
             subTitle={
               <div>
-                {currentTask && (
-                  <div>
-                    {complitedTasks.find((item) =>
-                      item.taskIds.includes(currentTask.id)
-                    )
-                      ? "Вы уже выполняли это задание верно"
-                      : "Вы ещё не выполняли это задание верно"}
-                  </div>
-                )}
-                <br />
                 {currentTask
                   ? `Сейчас выполнено заданий: ${currentTaskCount.finished}/${currentTaskCount.all}. Из них верно: ${currentTaskCount.correct}`
                   : ""}
