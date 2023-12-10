@@ -36,7 +36,7 @@ const App = observer(() => {
   }
 
   return (
-    <BrowserRouter basename="yuzik-front">
+    <BrowserRouter basename="/yuzik-front">
       <NavBar />
       <AppRouter />
     </BrowserRouter>
