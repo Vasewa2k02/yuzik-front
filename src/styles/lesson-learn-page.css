@@ -1,0 +1,39 @@
+.lesson-learn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.lesson-learn__fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.lesson-learn__task-fields {
+  width: 60%;
+}
+
+.lesson-learn__lesson-theory {
+  width: 90%;
+  margin-top: 40px;
+}
+
+.lesson-learn__answer-finished {
+  min-height: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.lesson-learn__answer {
+  min-height: 50px;
+  margin-top: 20px;
+}
+
+.answer-word {
+  margin: 5px;
+}

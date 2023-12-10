@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.change-password-button {
+  margin-top: 10px;
+}
+
+.learning-settings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.learning-settings__block {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.learning-settings__label {
+  width: 50%;
+  text-align: justify;
+}
+
+.learning-settings__input {
+  width: 20%;
+}

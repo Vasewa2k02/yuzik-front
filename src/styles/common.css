@@ -1,0 +1,18 @@
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.all-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.table-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

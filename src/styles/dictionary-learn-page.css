@@ -1,0 +1,65 @@
+.dictionary-learn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.single-learn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.single-learn__table {
+  width: 50%;
+}
+
+.single-learn__word {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.single-learn__word-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 45%;
+  height: 500px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.socket-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.socket-container__fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 45%;
+  height: 350px;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.socket-container__button {
+  width: 208px;
+  margin-top: 10px;
+}
+
+.socket-container__leaderboard {
+  width: 45%;
+}

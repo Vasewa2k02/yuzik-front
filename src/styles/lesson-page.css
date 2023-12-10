@@ -1,0 +1,107 @@
+.lesson-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.lesson-container__lesson-table {
+  max-width: 40%;
+}
+
+.lesson-container__task-table {
+  max-width: 60%;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1440px;
+  margin-top: 50px;
+}
+
+.lesson-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.lesson-fields__label {
+  width: 100%;
+  text-align: center;
+}
+
+.lesson-fields__passing-percent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 8px;
+  border: 1px solid #6c757d50;
+  border-radius: 5px;
+}
+
+.lesson-fields__slider {
+  width: 150px;
+}
+
+.lesson-fields__theory-label {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.lesson-fields__theory {
+  width: 100%;
+}
+
+.lesson-fields__theory-error-message {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.lesson-fields__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.task-fields {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.task-fields__name {
+  text-align: center;
+}
+
+.task-fields__english-sentence-label {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.lesson-fields__english-sentence-error-message {
+  margin-top: 10px;
+}
+
+.task-fields__russian-sentence-label {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lesson-fields__russian-sentence-error-message {
+  margin-top: 10px;
+}
+
+.task-fields__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
