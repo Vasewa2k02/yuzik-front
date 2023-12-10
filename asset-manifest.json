@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/English-web-app-Yuzik-/static/css/main.096367c1.css",
+    "main.js": "/English-web-app-Yuzik-/static/js/main.3bc1cf5d.js",
+    "static/js/885.da2c840e.chunk.js": "/English-web-app-Yuzik-/static/js/885.da2c840e.chunk.js",
+    "static/media/primeicons.svg": "/English-web-app-Yuzik-/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/primeicons.eot": "/English-web-app-Yuzik-/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/English-web-app-Yuzik-/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/English-web-app-Yuzik-/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/primeicons.woff2": "/English-web-app-Yuzik-/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "static/media/color.png": "/English-web-app-Yuzik-/static/media/color.6441e63a57ccc5105bad.png",
+    "index.html": "/English-web-app-Yuzik-/index.html",
+    "main.096367c1.css.map": "/English-web-app-Yuzik-/static/css/main.096367c1.css.map",
+    "main.3bc1cf5d.js.map": "/English-web-app-Yuzik-/static/js/main.3bc1cf5d.js.map",
+    "885.da2c840e.chunk.js.map": "/English-web-app-Yuzik-/static/js/885.da2c840e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.096367c1.css",
+    "static/js/main.3bc1cf5d.js"
+  ]
+}
