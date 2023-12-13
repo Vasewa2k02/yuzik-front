@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yuzik-front/static/css/main.4183ea3b.css",
-    "main.js": "/yuzik-front/static/js/main.5086d5df.js",
+    "main.js": "/yuzik-front/static/js/main.e3368273.js",
     "static/js/885.da2c840e.chunk.js": "/yuzik-front/static/js/885.da2c840e.chunk.js",
     "static/media/primeicons.svg": "/yuzik-front/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/primeicons.eot": "/yuzik-front/static/media/primeicons.d44157bdfa026dc877af.eot",
@@ -11,11 +11,11 @@
     "static/media/color.png": "/yuzik-front/static/media/color.6441e63a57ccc5105bad.png",
     "index.html": "/yuzik-front/index.html",
     "main.4183ea3b.css.map": "/yuzik-front/static/css/main.4183ea3b.css.map",
-    "main.5086d5df.js.map": "/yuzik-front/static/js/main.5086d5df.js.map",
+    "main.e3368273.js.map": "/yuzik-front/static/js/main.e3368273.js.map",
     "885.da2c840e.chunk.js.map": "/yuzik-front/static/js/885.da2c840e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4183ea3b.css",
-    "static/js/main.5086d5df.js"
+    "static/js/main.e3368273.js"
   ]
 }
